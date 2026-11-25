@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Пекельна лінія 55</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8' shape-rendering='crispEdges'%3E%3Crect width='8' height='8' fill='%23120818'/%3E%3Crect x='1' y='3' width='6' height='2' fill='%23ff2a6d'/%3E%3Crect x='3' y='1' width='2' height='6' fill='%2305d9e8'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="./fonts.css" />
+  <style>
+    html, body { margin: 0; height: 100%; background: #07040a; overflow: hidden; }
+    body { font-family: 'PressStart2P', monospace; }
+    #game { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; }
+    #game canvas { image-rendering: pixelated; image-rendering: crisp-edges; display: block; cursor: none; }
+    .px-input {
+      position: fixed; display: none; z-index: 10;
+      background: #120818; color: #ffe9f3; border: 2px solid #ff2a6d; outline: none;
+      font-family: 'PressStart2P', monospace; padding: 6px 8px; box-sizing: border-box;
+      letter-spacing: 1px; text-align: center;
+    }
+    .px-input::placeholder { color: #5a3a5a; }
+    #boot-msg { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center;
+      color: #8a6a8a; font: 12px monospace; }
+  </style>
+  <script type="module" crossorigin src="./index-DrD1sfk8.js"></script>
+</head>
+<body>
+  <div id="boot-msg">Загрузка…</div>
+  <div id="game"></div>
+  <input id="code-input" class="px-input" maxlength="4" autocomplete="off" spellcheck="false" placeholder="КОД" />
+</body>
+</html>
